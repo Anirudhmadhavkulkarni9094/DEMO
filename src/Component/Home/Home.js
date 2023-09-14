@@ -2,7 +2,7 @@ import Footer from '../Footer';
 import AboutUs from './AboutUs';
 import ChooseUs from './ChooseUs';
 import HomePage from './HomePage';
-import Testimonials from '../Testimonials/Testimonials';
+// import Testimonials from '../Testimonials/Testimonials';
 
 function Home() {
 
