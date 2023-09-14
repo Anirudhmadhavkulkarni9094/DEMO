@@ -28,19 +28,20 @@ const carouselResponsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    partialVisibilityGutter: 40,
+    partialVisibilityGutter: 60, // Increase this value to prevent overlapping
   },
   tablet: {
-    breakpoint: { max: 1024, min: 726 },
+    breakpoint: { max: 1024, min: 730 },
     items: 2,
-    partialVisibilityGutter: 30,
+    partialVisibilityGutter: 50, // Increase this value to prevent overlapping
   },
   mobile: {
-    breakpoint: { max: 720, min: 0 },
+    breakpoint: { max: 730, min: 0 },
     items: 1,
-    partialVisibilityGutter: 10,
+    partialVisibilityGutter: 30, // Increase this value to prevent overlapping
   },
 };
+
 
 // Function to render loading skeletons for at least 3 cards
 function renderLoadingSkeletons() {

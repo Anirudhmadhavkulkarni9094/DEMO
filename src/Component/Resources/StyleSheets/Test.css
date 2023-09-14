@@ -33,9 +33,9 @@
   padding: 20px;
   text-align: left;
   border-radius: 2rem;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: calc(30% - 20px);
-  min-width: 280px; /* Minimum width to prevent cards from becoming too small */
+  background-color: rgb(204, 203, 203);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -249,4 +249,8 @@ button[type="submit"]:hover {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   max-height: 100%; /* Ensure the image doesn't exceed its container */
   padding: 2rem;
+}
+
+.react-multi-carousel-item{
+  margin: 3rem;
 }
