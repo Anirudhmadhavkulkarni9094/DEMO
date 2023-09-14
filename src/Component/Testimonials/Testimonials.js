@@ -38,7 +38,7 @@ const carouselResponsive = {
   mobile: {
     breakpoint: { max: 730, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30, // Increase this value to prevent overlapping
+    partialVisibilityGutter: 10, // Increase this value to prevent overlapping
   },
 };
 
