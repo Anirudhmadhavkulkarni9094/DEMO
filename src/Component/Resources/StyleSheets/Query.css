@@ -1,0 +1,26 @@
+.query{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(208, 208, 208);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 25rem;
+  height: 18rem;
+  box-shadow: 0px 0px 10px rgb(162, 162, 162) ;
+  position: relative;
+}
+
+.query-delete{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+
+.query-page{
+  margin: 1rem;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
