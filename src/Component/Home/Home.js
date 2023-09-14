@@ -12,9 +12,6 @@ function Home() {
     <HomePage></HomePage>
     <AboutUs></AboutUs>
     <ChooseUs/>
-    <div className="App">
-      <Testimonials />
-    </div>
     <Footer></Footer>
     </>
 
