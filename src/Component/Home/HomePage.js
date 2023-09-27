@@ -10,7 +10,11 @@ function HomePage() {
       <div className='containers'>
         <div className='row intro-row'>
           <div className='col-lg-6 Intro'>
-            <h4 className='WORDS'>WELCOME TO PANCHAMI ASSOCIATES: </h4><br></br> <p>CRAFTING THE BLUEPRINT OF EXCELLENCE IN CIVIL CONSTRUCTION</p>
+            <div className='WORDS'>
+              <h4>Welcome to</h4>
+              <h1> Panchami associates</h1>
+              <p>Crafting the blueprint of excellence in civil construction</p>
+            </div>
           </div>
           <div className='col-lg-6 Intro'>
             <img src={welcomeImage} className='Intro-img' alt='' />

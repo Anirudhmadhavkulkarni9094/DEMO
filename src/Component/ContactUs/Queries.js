@@ -19,7 +19,7 @@ function Queries() {
   }
   return (
     <div className='query-page'>
-{queries.map(query=>{
+{queries.length > 0 ? queries.map(query=>{
   return <div className='query'>
       <h4>{query.name}</h4>
       <p>{query.phoneNumber}</p>
@@ -27,7 +27,7 @@ function Queries() {
       <p>{query.message}</p>
       <button className='btn btn-danger query-delete' onClick={()=>handleDelete(query._id)}>delete</button>
   </div>
-})}
+}) : <h1 className='empty-query'>No queries</h1>}
 
     </div>
   )

@@ -1,24 +1,40 @@
 .intro-page {
-  /* padding: 3rem 0; */
-  background: radial-gradient(#ffff, #a0fdff);
+  background: radial-gradient(circle, rgb(41, 251, 255) 0%, rgba(255, 255, 255, 1) 100%);
+  text-align: center; /* Center align content vertically */
+  display: flex; /* Enable flex layout for centering */
+  flex-direction: column; /* Center align content vertically */
+  justify-content: center; /* Center align content vertically */
+  min-height: 100vh; /* Ensure minimum height to fill the viewport */
 }
+
+/* You can also style text or other elements inside .intro-page for better readability */
+.intro-page h1 {
+  font-size: 2rem;
+  color: #333; /* Set your preferred text color */
+}
+
+.intro-page p {
+  font-size: 1.2rem;
+  color: #666; /* Set your preferred text color */
+}
+
+/* Adjust the font sizes and colors to your liking */
+
 
 .Intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  
 }
 
-.WORDS{
-  font-family:Arial, Helvetica, sans-serif;
-}
+
 
 .Intro-img {
-  width: 70%;
+  width: 50%;
   max-width: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin: 2rem;
   padding: 0.1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -188,8 +204,79 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 .WORDS{
-  font-family: 'Courgette', cursive;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  align-items: right;
+  height: 25rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid black;
+  padding: 2rem 2%;
+}
+.WORDS h4{
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.WORDS h1{
+  font-size: 4rem;
+ 
+}
+.WORDS p{
   font-size: 2rem;
 }
+
+@media screen and (max-width : 600px) {
+  .WORDS{
+    display: flex;
+    height: auto;
+    padding: 0rem 2rem;
+    border-right: none;
+    text-align: left;
+    
+  }
+
+  .Intro{
+    padding: 0%;
+  }
+  .intro-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Intro-img{
+    margin: 0rem 2rem;
+  }
+  .WORDS h4{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  
+  .WORDS h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+  }
+  .WORDS p{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width : 995px){
+  .WORDS{
+    display: flex;
+    height: auto;
+    padding: 0rem 2rem;
+    border-right: none;
+    text-align: left;
+    overflow: hidden;
+    
+  }
+  .WORDS h4{
+    text-align: left;
+  }
+} 

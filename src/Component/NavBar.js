@@ -5,11 +5,12 @@ import AdminLogin from './Form/AdminLogin';
 import UserRegistration from './Form/UserRegistration';
 
 function NavBar({ authentication, admin, statusUpdate, status }) {
-  const handleSignOut = ()=>{
+  const handleSignOut = () => {
     authentication(false);
     statusUpdate(false);
-    window.location.href = '/'
-  }
+    window.location.href = '/';
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark">
@@ -18,7 +19,7 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
             <img src={require('./Resources/Images/Logo.png')} className='NavBar' alt='' />
           </Link>
           <button className="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon "></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,6 +32,22 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
               <li className="nav-item">
                 <Link className="nav-link text-light" to="/Services">Services</Link>
               </li>
+              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item primary" href="#">Residential Construction</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="#">Commercial Construction</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="#">TurnKey Projects</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="#">Architectural Designing</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="#">Structural Designing</a></li>
+          </ul>
+        </li>
               {!admin && <li className="nav-item">
                 <Link className="nav-link text-light" to="/Contact-us">Contact us</Link>
               </li>}
@@ -44,7 +61,7 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
                   </li>
                 </>
               )}
-              {status && !admin &&(
+              {status && !admin && (
                 <li className="nav-item">
                   <Link className="nav-link text-light" to="/Testimonial">Testimonial</Link>
                 </li>
@@ -66,7 +83,7 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
                 </div>
               </div>
             </div>
-            {!(admin || status )  ? <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#admin">
+            {!(admin || status) ? <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#admin">
               Login
             </button> : <button type="button" className="btn btn-outline-success mx-1" onClick={handleSignOut}>
               Sign out

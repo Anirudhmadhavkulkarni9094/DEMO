@@ -13,7 +13,6 @@ function Projects() {
               <h5 className='card-title'>CIVIL AND GENERAL CONTRACTING</h5>
               <p className='card-text'>
               Providing highly qualified civil and general contractor services and dependability that they put while developing properties </p>
-              
             </div>
           </div>
         </div>
