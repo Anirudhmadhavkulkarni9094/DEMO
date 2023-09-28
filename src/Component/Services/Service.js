@@ -11,10 +11,10 @@ const Service = () => {
     <div className="service">
       <div className='left-bar'>
         <ul className='service-list'>
-          <li><Link to = "#res">Residential Construction</Link></li>
-          <li><Link to = '#Cc'>Commercial Construction</Link></li>
-          <li><Link to = '#Pro'>Interior Designing Projects</Link> </li>
-          <li><Link to = '#Arch'>Building Extensions</Link></li>
+          <li><a href = "#res">Residential Construction</a></li>
+          <li><a href = '#Cc'>Commercial Construction</a></li>
+          <li><a href = '#Pro'>Interior Designing Projects</a> </li>
+          <li><a href = '#Arch'>Building Extensions</a></li>
         </ul>
       </div>
       <div className='Right-bar'>

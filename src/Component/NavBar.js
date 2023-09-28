@@ -37,13 +37,13 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><Link  className='dropdown-item' to= "/Services/#res">Residential Construction</Link></li>
+            <li><a  className='dropdown-item' href= "/Services/#res">Residential Construction</a></li>
             <li><hr class="dropdown-divider"/></li>
-          <li><Link  className='dropdown-item' to= '/Services/#Cc'>Commercial Construction</Link></li>
+          <li><a  className='dropdown-item' href= '/Services/#Cc'>Commercial Construction</a></li>
           <li><hr class="dropdown-divider"/></li>
-          <li><Link  className='dropdown-item' to='/Services/#Pro'>Projects</Link> </li>
+          <li><a  className='dropdown-item' href='/Services/#Pro'>Projects</a> </li>
           <li><hr class="dropdown-divider"/></li>
-          <li><Link  className='dropdown-item' to='/Services/#Arch'>Architectural Designing</Link></li>
+          <li><a  className='dropdown-item' href='/Services/#Arch'>Architectural Designing</a></li>
           </ul>
         </li>
               {!admin && <li className="nav-item">
