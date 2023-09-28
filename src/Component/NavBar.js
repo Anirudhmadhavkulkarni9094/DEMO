@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resources/StyleSheets/NavBar.css';
-import { Link } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 import AdminLogin from './Form/AdminLogin';
 import UserRegistration from './Form/UserRegistration';
 
@@ -29,23 +29,21 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
               <li className="nav-item">
                 <Link className="nav-link text-light" to="/Projects">Projects</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link text-light" to="/Services">Services</Link>
-              </li>
+              </li> */}
               <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item primary" href="/">Residential Construction</a></li>
+            <li><a  className='dropdown-item' href = "/Services/#res">Residential Construction</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="/">Commercial Construction</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="/">TurnKey Projects</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="/">Architectural Designing</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="/">Structural Designing</a></li>
+          <li><a  className='dropdown-item' href='/Services/#Cc'>Commercial Construction</a></li>
+          <li><hr class="dropdown-divider"/></li>
+          <li><a  className='dropdown-item' href='/Services/#Pro'>Projects</a> </li>
+          <li><hr class="dropdown-divider"/></li>
+          <li><a  className='dropdown-item' href='/Services/#Arch'>Architectural Designing</a></li>
           </ul>
         </li>
               {!admin && <li className="nav-item">
