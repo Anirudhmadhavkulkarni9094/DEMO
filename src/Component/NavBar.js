@@ -32,7 +32,7 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
               <li className="nav-item">
                 <Link className="nav-link text-light" to="/Services">Services</Link>
               </li>
-              <li class="nav-item dropdown">
+              {/* <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </a>
@@ -45,7 +45,7 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
           <li><hr class="dropdown-divider"/></li>
           <li><a  className='dropdown-item' href='/Services/#Arch'>Architectural Designing</a></li>
           </ul>
-        </li>
+        </li> */}
               {!admin && <li className="nav-item">
                 <Link className="nav-link text-light" to="/Contact-us">Contact us</Link>
               </li>}
