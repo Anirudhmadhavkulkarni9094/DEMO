@@ -48,7 +48,7 @@ function App() {
             </>
           )}
           <Route path="/Contact-us" element={<ContactForm />} />
-          <Route path="/Services" element={<Service />} />
+          <Route path="/Services" element={<Service/>} />
           {status ? (
             <Route path="/Testimonial" element={<TestimonialForm />} />
           ) : null}

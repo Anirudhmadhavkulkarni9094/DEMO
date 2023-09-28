@@ -29,21 +29,21 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
               <li className="nav-item">
                 <Link className="nav-link text-light" to="/Projects">Projects</Link>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link text-light" to="/Services">Services</Link>
-              </li> */}
+              </li>
               <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><a  className='dropdown-item' href = "/Services/#res">Residential Construction</a></li>
+            <li><Link  className='dropdown-item' to= "/Services/#res">Residential Construction</Link></li>
             <li><hr class="dropdown-divider"/></li>
-          <li><a  className='dropdown-item' href='/Services/#Cc'>Commercial Construction</a></li>
+          <li><Link  className='dropdown-item' to= '/Services/#Cc'>Commercial Construction</Link></li>
           <li><hr class="dropdown-divider"/></li>
-          <li><a  className='dropdown-item' href='/Services/#Pro'>Projects</a> </li>
+          <li><Link  className='dropdown-item' to='/Services/#Pro'>Projects</Link> </li>
           <li><hr class="dropdown-divider"/></li>
-          <li><a  className='dropdown-item' href='/Services/#Arch'>Architectural Designing</a></li>
+          <li><Link  className='dropdown-item' to='/Services/#Arch'>Architectural Designing</Link></li>
           </ul>
         </li>
               {!admin && <li className="nav-item">
