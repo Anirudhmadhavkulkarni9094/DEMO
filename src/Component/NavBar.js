@@ -33,19 +33,19 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
                 <Link className="nav-link text-light" to="/Services">Services</Link>
               </li>
               <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item primary" href="#">Residential Construction</a></li>
+            <li><a class="dropdown-item primary" href="/">Residential Construction</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Commercial Construction</a></li>
+            <li><a class="dropdown-item" href="/">Commercial Construction</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">TurnKey Projects</a></li>
+            <li><a class="dropdown-item" href="/">TurnKey Projects</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Architectural Designing</a></li>
+            <li><a class="dropdown-item" href="/">Architectural Designing</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Structural Designing</a></li>
+            <li><a class="dropdown-item" href="/">Structural Designing</a></li>
           </ul>
         </li>
               {!admin && <li className="nav-item">
