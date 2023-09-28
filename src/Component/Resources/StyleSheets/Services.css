@@ -7,6 +7,7 @@
   /* z-index: -1; */
 }
 
+
 .left-bar {
   background-color: rgb(236, 236, 236);
   margin: 0.5rem 0.5rem;
@@ -184,3 +185,32 @@
 }
 
 /* Add more styles as needed */
+
+
+@media  screen and (max-width : 730px) {
+  .service{
+    display: block;
+    
+  }
+  .left-bar{
+    height: auto!important;
+  }
+  .service-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 0.5rem;
+    margin: 0rem!important;
+    padding: 0rem!important;
+  }
+  .service-list li {
+    width: 3rem;
+    overflow: hidden;
+    list-style-type: none;
+    font-family: 'Martian Mono', monospace;
+    text-decoration: none;
+  
+    margin: 1rem 0rem!important;
+  }
+  
+}
