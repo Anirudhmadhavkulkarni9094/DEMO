@@ -1,10 +1,12 @@
 .intro-page {
-  background: radial-gradient(circle, rgb(41, 251, 255) 0%, rgba(255, 255, 255, 1) 100%);
+  background: radial-gradient(rgb(99, 234, 255) , white);
   text-align: center; /* Center align content vertically */
   display: flex; /* Enable flex layout for centering */
   flex-direction: column; /* Center align content vertically */
   justify-content: center; /* Center align content vertically */
   min-height: 100vh; /* Ensure minimum height to fill the viewport */
+  position: relative;
+  top: -3rem;
 }
 
 /* You can also style text or other elements inside .intro-page for better readability */
@@ -214,6 +216,7 @@
   justify-content: space-between;
   border-right: 2px solid black;
   padding: 2rem 2%;
+  align-content: center;
 }
 .WORDS h4{
   font-size: 3rem;

@@ -13,10 +13,10 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link className="navbar-brand text-light" to="/">
-            <img src={require('./Resources/Images/Logo.png')} className='NavBar' alt='' />
+          <Link className="navbar-brand " to="/">
+            <img src={require('./Resources/Images/Logo.png')} className='NavBar-img' alt='' />
           </Link>
           <button className="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -24,48 +24,34 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active text-light" aria-current="page" to="/">Home</Link>
+                <Link className="nav-link active " aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-light" to="/Projects">Projects</Link>
+                <Link className="nav-link " to="/Projects">Projects</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-light" to="/Services">Services</Link>
-              </li>
-              {/* <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu">
-            <li><a  className='dropdown-item' href= "/Services/#res">Residential Construction</a></li>
-            <li><hr class="dropdown-divider"/></li>
-          <li><a  className='dropdown-item' href= '/Services/#Cc'>Commercial Construction</a></li>
-          <li><hr class="dropdown-divider"/></li>
-          <li><a  className='dropdown-item' href='/Services/#Pro'>Projects</a> </li>
-          <li><hr class="dropdown-divider"/></li>
-          <li><a  className='dropdown-item' href='/Services/#Arch'>Architectural Designing</a></li>
-          </ul>
-        </li> */}
+                <Link className="nav-link " to="/Services">Services</Link>
+              </li> 
               {!admin && <li className="nav-item">
-                <Link className="nav-link text-light" to="/Contact-us">Contact us</Link>
+                <Link className="nav-link " to="/Contact-us">Contact us</Link>
               </li>}
               {admin && (
                 <>
                   <li className="nav-item">
-                    <Link className="nav-link text-light" to="/Admin-panel">Admin-panel</Link>
+                    <Link className="nav-link " to="/Admin-panel">Admin-panel</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-light" to="/Query-panel">Query-panel</Link>
+                    <Link className="nav-link " to="/Query-panel">Query-panel</Link>
                   </li>
                 </>
               )}
               {status && !admin && (
                 <li className="nav-item">
-                  <Link className="nav-link text-light" to="/Testimonial">Testimonial</Link>
+                  <Link className="nav-link " to="/Testimonial">Testimonial</Link>
                 </li>
               )}
             </ul>
-            <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#Register">
+            <button type="button" className="btn btn-outline-dark mx-1" data-bs-toggle="modal" data-bs-target="#Register">
               Register
             </button>
             <div className="modal fade" id="Register" tabIndex="-1" aria-labelledby="RegisterLabel" aria-hidden="true">
@@ -81,7 +67,7 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
                 </div>
               </div>
             </div>
-            {!(admin || status) ? <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#admin">
+            {!(admin || status) ? <button type="button" className="btn btn-outline-dark mx-1" data-bs-toggle="modal" data-bs-target="#admin">
               Login
             </button> : <button type="button" className="btn btn-outline-success mx-1" onClick={handleSignOut}>
               Sign out

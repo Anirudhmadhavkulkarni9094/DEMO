@@ -122,11 +122,12 @@
   
 
   .modal-body{
-    background: linear-gradient(-30deg , rgb(84, 255, 249) , skyblue , rgb(92, 222, 255));
+    /* background: linear-gradient(-30deg , rgb(84, 255, 249) , skyblue , rgb(92, 222, 255)); */
     border-radius: 0rem 0rem 1rem 1rem;
   }
 
   .modal-content{
-    background: linear-gradient(-30deg , rgb(84, 255, 249) , skyblue , rgb(92, 222, 255));
+    /* background: linear-gradient(-30deg , rgb(84, 255, 249) , skyblue , rgb(92, 222, 255)); */
     border-radius: 1rem!important;
+    text-align: justify;
   }

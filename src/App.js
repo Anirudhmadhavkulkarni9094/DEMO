@@ -10,6 +10,7 @@ import ProjectUpload from './Component/Project/ProjectUpload';
 import ProjectList from './Component/Project/ProjectList';
 import Service from './Component/Services/Service';
 import TestimonialForm from './Component/Form/TestimonialForm';
+import Footer from './Component/Footer';
 
 function App() {
   const [auth, setAuth] = useState("USER");
@@ -53,6 +54,7 @@ function App() {
             <Route path="/Testimonial" element={<TestimonialForm />} />
           ) : null}
         </Routes>
+        <Footer></Footer>
       </>
     </Router>
   );

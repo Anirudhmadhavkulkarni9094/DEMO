@@ -1,5 +1,26 @@
 .NavBar{
-    height: 2rem;    
+    height: 2rem;
+    background-color: white!important;
+    color: black; 
+    position: sticky!important;
+    top: 0;   
+    padding : 0;
+}
+
+.navbar{
+  background-color: white;
+  position: sticky;
+  top: 5px;
+  padding: 0.5rem;
+ z-index: 5;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px rgb(104, 104, 104);
+}
+.NavBar-img{
+  width: 12rem;
+  height: 4rem;
+  
 }
 .queryNumber {
     background-color: red;
@@ -23,3 +44,18 @@
     align-items: center;
   }
 
+@media screen  and (max-width : 720px){
+  .NavBar-img{
+    width: 5rem;
+    height: 2rem;
+  }
+
+  .navbar{
+    padding: 1rem;
+    margin: 0.2rem;
+  }
+}
+
+.modal-backdrop{
+  z-index: -5;
+}

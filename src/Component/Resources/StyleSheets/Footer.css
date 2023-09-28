@@ -3,6 +3,8 @@
     background-color: #333;
     color: #fff;
     padding: 40px 0;
+    position: sticky;
+    bottom: -38rem;
     overflow-x: hidden; /* Hide horizontal overflow */
   }
   
@@ -69,7 +71,8 @@
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column; /* Stack items vertically on smaller screens */
-      text-align: center;
+      /* text-align: center; */
+      font-size: 0.5rem;
     }
   
     .footer-section {
@@ -78,6 +81,9 @@
   
     .footer-bottom {
       margin-top: 20px;
+    }
+    .address{
+      font-size: 0.8rem;
     }
   }
   

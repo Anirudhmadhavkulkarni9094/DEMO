@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className='footer-container'>
       <div className='footer-content'>
-      <div className='footer-section'>
+      <div className='footer-section-main m-2'>
           <img src={require('./Resources/Images/Logo.png')} className='Logo' alt=''></img>
         </div>
         <div className='footer-section'>

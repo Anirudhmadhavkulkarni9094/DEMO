@@ -1,4 +1,4 @@
-import Footer from '../Footer';
+
 import AboutUs from './AboutUs';
 import ChooseUs from './ChooseUs';
 import HomePage from './HomePage';
@@ -12,7 +12,7 @@ function Home() {
     <HomePage></HomePage>
     <AboutUs></AboutUs>
     <ChooseUs/>
-    <Footer></Footer>
+    
     </>
 
   );
