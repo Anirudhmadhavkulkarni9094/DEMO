@@ -5,3 +5,9 @@
 nav{
     justify-content: space-between!important;
 }
+
+.auth-btn{
+    width: 2rem!important;
+    margin: 1rem!important;
+}
+

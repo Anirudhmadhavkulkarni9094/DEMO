@@ -4,7 +4,7 @@
     color: #fff;
     padding: 40px 0;
     position: sticky;
-    bottom: -15rem;
+    bottom: -16rem;
     overflow-x: hidden; /* Hide horizontal overflow */
   }
   
@@ -84,6 +84,9 @@
     }
     .address{
       font-size: 0.8rem;
+    }
+    .footer-container{
+      bottom: -39rem;
     }
   }
   

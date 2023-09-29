@@ -62,3 +62,14 @@
 .modal-backdrop{
   z-index: -5;
 }
+.auth-btn{
+  width: 5rem;
+  margin: 5px;
+}
+
+.ul.navbar-nav{
+  display: flex;
+  
+  justify-content: center!important;
+  
+}

@@ -29,7 +29,7 @@ function NavBarCopy({ authentication, admin, statusUpdate, status }) {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
@@ -75,7 +75,7 @@ function NavBarCopy({ authentication, admin, statusUpdate, status }) {
             )}
             <button
               type="button"
-              className="btn btn-outline-dark mx-1"
+              className="btn btn-outline-dark mx-1 auth-btn"
               data-bs-toggle="modal"
               data-bs-target="#Register"
               >
@@ -99,14 +99,14 @@ function NavBarCopy({ authentication, admin, statusUpdate, status }) {
             {!(admin || status) ? (
               <button
               type="button"
-                className="btn btn-outline-dark mx-1"
+                className="btn btn-outline-dark auth-btn mx-1"
                 data-bs-toggle="modal"
                 data-bs-target="#admin"
                 >
                 Login
               </button>
             ) : (
-              <button type="button" className="btn btn-outline-success mx-1" onClick={handleSignOut}>
+              <button type="button" className="btn btn-outline-success auth-btn mx-1" onClick={handleSignOut}>
                 Sign out
               </button>
             )}
@@ -117,7 +117,7 @@ function NavBarCopy({ authentication, admin, statusUpdate, status }) {
                     <h1 className="modal-title fs-5" id="adminLabel">
                       Login
                     </h1>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" className="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div className="modal-body">
                     <AdminLogin authentication={authentication} statusUpdate={statusUpdate} />
