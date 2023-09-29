@@ -1,0 +1,7 @@
+.container{
+    margin: 0%;
+    width: 100vh!important;
+}
+nav{
+    justify-content: space-between!important;
+}

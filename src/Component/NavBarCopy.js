@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import AdminLogin from './Form/AdminLogin';
 import UserRegistration from './Form/UserRegistration';
 
-function NavBar({ authentication, admin, statusUpdate, status }) {
+function NavBarCopy({ authentication, admin, statusUpdate, status }) {
   const handleSignOut = () => {
     authentication(false);
     statusUpdate(false);
@@ -12,73 +12,67 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
   };
 
   return (
-    <>
-      <nav className="navbar navbar-expand-lg">
-        
-        <div className="container-fluid">
-          <Link className="navbar-brand " to="/">
-            <img src={require('./Resources/Images/Logo.png')} className='NavBar-img' alt='' />
-          </Link>
-          
-          <button
-            className="navbar-toggler bg-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          
-          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <Link className="navbar-brand" to="/">
+          <img src={require('./Resources/Images/Logo.png')} className="NavBar-img" alt="" />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Projects">
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Services">
+                Services
+              </Link>
+            </li>
+            {!admin && (
               <li className="nav-item">
-                <Link className="nav-link active " aria-current="page" to="/">
-                  Home
+                <Link className="nav-link" to="/Contact-us">
+                  Contact us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link " to="/Projects">
-                  Projects
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link " to="/Services">
-                  Services
-                </Link>
-              </li>
-              {!admin && (
+            )}
+            {admin && (
+              <>
                 <li className="nav-item">
-                  <Link className="nav-link " to="/Contact-us">
-                    Contact us
+                  <Link className="nav-link" to="/Admin-panel">
+                    Admin-panel
                   </Link>
                 </li>
-              )}
-              {admin && (
-                <>
-                  <li className="nav-item">
-                    <Link className="nav-link " to="/Admin-panel">
-                      Admin-panel
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link " to="/Query-panel">
-                      Query-panel
-                    </Link>
-                  </li>
-                </>
-              )}
-              {status && !admin && (
                 <li className="nav-item">
-                  <Link className="nav-link " to="/Testimonial">
-                    Testimonial
+                  <Link className="nav-link" to="/Query-panel">
+                    Query-panel
                   </Link>
                 </li>
-              )}
+              </>
+            )}
+            {status && !admin && (
+              <li className="nav-item">
+                <Link className="nav-link" to="/Testimonial">
+                  Testimonial
+                </Link>
+              </li>
+            )}
             <button
               type="button"
               className="btn btn-outline-dark mx-1"
@@ -131,12 +125,11 @@ function NavBar({ authentication, admin, statusUpdate, status }) {
                 </div>
               </div>
             </div>
-            </ul>
-          </div>
+          </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
 
-export default NavBar;
+export default NavBarCopy;

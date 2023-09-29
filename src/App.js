@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Home from './Component/Home/Home';
-import NavBar from './Component/NavBar';
+// import NavBar from './Component/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AdminPanel from './Component/AdminPanel/AdminPanel';
 import ContactForm from './Component/ContactUs/ContactForm';
@@ -11,6 +11,7 @@ import ProjectList from './Component/Project/ProjectList';
 import Service from './Component/Services/Service';
 import TestimonialForm from './Component/Form/TestimonialForm';
 import Footer from './Component/Footer';
+import NavBarCopy from './Component/NavBarCopy';
 
 function App() {
   const [auth, setAuth] = useState("USER");
@@ -33,7 +34,7 @@ function App() {
   return (
     <Router basename='/'>
       <>
-        <NavBar authentication={authentication} admin={admin} statusUpdate={statusUpdate} status={status} />
+        <NavBarCopy authentication={authentication} admin={admin} statusUpdate={statusUpdate} status={status} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/" element={<Home />} />
