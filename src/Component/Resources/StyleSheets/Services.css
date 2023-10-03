@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@600&display=swap');
 .service {
   display: grid;
-  grid-template-columns: 1.5fr 4fr; /* Two columns with equal width */
+  grid-template-columns: 1.3fr 4fr; /* Two columns with equal width */
   /* grid-gap: 20px; Adjust the gap between columns */
   position: relative;
   /* z-index: -1; */
+  margin: 0;
+  padding: 0;
 }
+
 
 
 .left-bar {
@@ -15,8 +18,51 @@
   box-shadow: 0px 0px 10px rgb(150, 150, 150);
   height: 30rem;
   position: sticky;
-  top :0.5rem;
+  top :7rem;
 }
+
+.left-bar ul li a{
+  text-decoration: none;
+  color: black;
+}
+.left-bar ul li {
+  list-style: none;
+  margin: 1.5rem 0rem;
+  font-weight: 600;
+  color: black;
+  position: relative; /* Add this to create a stacking context */
+}
+
+.left-bar ul li {
+  list-style: none;
+  margin: 1.5rem 0rem;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  position: relative;
+}
+
+.left-bar ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 0, 0); /* You can change the color to your preference */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Initially, set the line width to 0 */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.left-bar ul li:hover::after {
+  transform: scaleX(1); /* Expand the line width when hovered */
+}
+
+
+
+
 
 .Right-bar {
   background-color: rgb(236, 236, 236);
@@ -25,198 +71,54 @@
   line-height: 3rem!important;
   box-shadow: 0px 0px 10px rgb(150, 150, 150);
 }
-
-.service-content p{
-  text-align: justify;
-  line-height: 3rem!important;
+.residential-container{
+  padding: 1rem 4rem;
 }
 
+.residential-container h2{
+  font-weight: 700;
+} 
 
-
-
-.service-list li {
-  margin: 1rem;
-  margin: 2rem 0rem;
-  list-style-type: none;
-  font-family: 'Onest', sans-serif;
-  text-decoration: none;
-  font-size: 1.3rem;
+.example{
+  width: 15rem;
+  border-radius: 15px ;
+  box-shadow: 0px 0px 10px grey;
+  margin: 2rem;
 }
 
-.service-list li a{
-  text-decoration: none;
-  color:#333;
-}
-
-/* Styles for the BuildingExtensions component */
-
-.service-content {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-.service-content h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.service-content h3 {
-  font-size: 20px;
-  color: #555;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.service-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-}
-
-/* Style hyperlinks */
-.service-content a {
-  color: #007bff; /* Blue hyperlink color */
-  text-decoration: none;
-}
-
-.service-content a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Add more styles as needed */
-/* Styles for the CommercialConstruction component */
-
-.service-content {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-.service-content h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.service-content p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-}
-
-/* Style hyperlinks */
-.service-content a {
-  color: #007bff; /* Blue hyperlink color */
-  text-decoration: none;
-}
-
-.service-content a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Add more styles as needed */
-/* Styles for the InteriorDesigningProjects component */
-
-/* Container for the entire content */
-.interior-container {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-.interior-container h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.interior-container p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-}
-
-/* Style hyperlinks */
-.interior-container a {
-  color: #007bff; /* Blue hyperlink color */
-  text-decoration: none;
-}
-
-.interior-container a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-.residential-container {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-.residential-container h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.residential-container p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-}
-
-/* Style bullet points */
-.residential-container ul {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-/* Add more styles as needed */
-.interior-container p{
-  line-height: 3rem;
-}
-
-.residential-container h2, .residential-container p{
-  line-height: 2.3rem;
-}
-
-@media  screen and (max-width : 730px) {
-  .service{
-    display: block;
+@media screen and (max-width : 730px) {
+  .service {
+    display: flex;
+    flex-direction: column;
     
   }
   .left-bar{
-    height: auto!important;
+    position: sticky;
+    height: 4rem !important;
+    top: 2rem;
+    font-size: 0.6rem;
   }
-  .service-list{
+
+  .left-bar ul{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 0.5rem;
-    margin: 0rem!important;
-    padding: 0rem!important;
   }
-  .service-list li {
-    width: 3rem;
-    list-style-type: none;
-    word-break:keep-all;
-    font-family: 'Martian Mono', monospace;
-    text-decoration: none;
-    font-size: 0.7rem!important;
-    margin: 1rem 0rem!important;
+
+  .navbar{
+    position: relative!important;
+  }
+
+  .residential-container h2{
+    font-size: 1rem;
+  }
+
+  .example{
+    margin: 1rem;
   }
   
+
+  .left-bar{
+    /* position: relative; */
+    top: 0;
+  }
 }

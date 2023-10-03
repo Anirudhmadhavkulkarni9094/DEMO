@@ -3,8 +3,10 @@ import '../Resources/StyleSheets/Services.css';
 
 function CommercialConstruction() {
   return (
-    <div className="service-content">
+    <div className="residential-container">
       <h2>Commercial Construction: Building Success for Businesses</h2>
+      <img src={require("../Resources/Images/example.png")} className='example' alt=''></img>
+
       <p>
         Commercial construction is the dynamic and specialized sector of the construction industry focused on creating spaces that facilitate commerce and industry. Whether it's constructing office buildings, retail centers, warehouses, or hospitality facilities, commercial construction plays a pivotal role in shaping the modern business landscape.
       </p>

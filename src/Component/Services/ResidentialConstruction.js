@@ -5,6 +5,8 @@ function ResidentialConstruction() {
   return (
     <div className="residential-container">
       <h2>Residential Construction: Creating Comfortable and Functional Living Spaces</h2>
+      <img alt='' src={require("../Resources/Images/example.png")} className='example'></img>
+
       <p>
         Residential construction is the art and science of building homes, townhouses, and apartment complexes to provide comfortable and functional living spaces for individuals and families. This vital sector of the construction industry focuses on creating safe, aesthetically pleasing, and structurally sound residential structures, whether they are single-family homes, multi-unit dwellings, or even custom-designed luxury residences.
       </p>

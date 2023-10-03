@@ -3,8 +3,10 @@ import '../Resources/StyleSheets/Services.css';
 
 function InteriorDesigningProjects() {
   return (
-    <div className="interior-container">
+    <div className="residential-container">
       <h2>Interior Designing Projects: Elevating Interior Spaces to Unparalleled Aesthetics</h2>
+      <img  alt='' src={require("../Resources/Images/example.png")} className='example'></img>
+
       <p>
         At Panchami Associates, we take pride in our Interior Designing Projects, where we transform mundane spaces into captivating havens that reflect your unique style and vision. Our team of talented interior designers and skilled craftsmen collaborate seamlessly to bring your interior dreams to life.
       </p>

@@ -23,11 +23,13 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
+  
 }
 
 .empty-query{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

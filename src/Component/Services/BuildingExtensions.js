@@ -3,12 +3,12 @@ import '../Resources/StyleSheets/Services.css'; // Import the stylesheet
 
 function BuildingExtensions() {
   return (
-    <div className="service-content">
+    <div className="residential-container">
       <h2>Building Extensions</h2>
       <p>
         Building extensions are a popular construction service that allows homeowners to expand their living spaces without the need for a complete relocation. These additions can serve a variety of purposes, from creating extra bedrooms and bathrooms to expanding the kitchen or adding a home office. Here's a brief overview of building extensions and why they are a valuable investment for homeowners:
       </p>
-
+      <img src={require("../Resources/Images/example.png")} className='example' alt=''></img>
       <p>
         Building extensions involve designing and constructing new living spaces that seamlessly integrate with the existing structure of a home. They offer an excellent solution for homeowners who need more space but want to avoid the hassle and cost of moving. Extensions are a versatile option that can be customized to suit your specific needs and preferences, whether you want to create a cozy sunroom, a spacious family room, or an elegant master suite.
       </p>

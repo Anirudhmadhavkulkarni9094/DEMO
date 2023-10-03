@@ -10,7 +10,7 @@ const Service = () => {
   return (
     <div className="service">
       <div className='left-bar'>
-        <ul className='service-list'>
+        <ul className='service-list m-0 p-0'>
           <li><a href = "#res">Residential Construction</a></li>
           <li><a href = '#Cc'>Commercial Construction</a></li>
           <li><a href = '#Pro'>Interior Designing Projects</a> </li>

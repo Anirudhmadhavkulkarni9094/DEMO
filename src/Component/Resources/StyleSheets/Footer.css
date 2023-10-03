@@ -4,7 +4,8 @@
     color: #fff;
     padding: 40px 0;
     position: sticky;
-    bottom: -16rem;
+    bottom: -26rem;
+    z-index: -5;
     overflow-x: hidden; /* Hide horizontal overflow */
   }
   
@@ -86,7 +87,8 @@
       font-size: 0.8rem;
     }
     .footer-container{
-      bottom: -39rem;
+      bottom: -38rem;
+      
     }
   }
   
